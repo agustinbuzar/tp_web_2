@@ -15,6 +15,7 @@ CREATE TABLE especialidad(	cod_especialidad varchar(2) PRIMARY KEY,
 
 CREATE TABLE empleado(	dni int PRIMARY KEY,
 						nombre varchar(30),
+                        apellido varchar(30),
                         fecha_nac date,
                         tipo_licencia varchar(30),
                         tipo_empleado varchar(2),
