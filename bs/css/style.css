@@ -1,0 +1,35 @@
+body{
+    background: url("../../img/fondo_tp.png");
+}
+
+.top{
+    text-align: center;
+    background: black;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cont{
+    background: white;
+    width: 80%;
+    margin-top: 5px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 20%;
+    padding-right:20%;
+}
+
+.pie{
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 15px;
+    text-align: center;
+    background: black;
+    width: 80%;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

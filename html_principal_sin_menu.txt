@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>JUAGMA | logistica</title>
+
+        <!-- CSS de Bootstrap -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <link href="bs/css/style.css" rel="stylesheet" media="screen"/>  
+  </head>
+      <body>
+              <div class="container top">
+                <img src="img/logo.png" class="img-responsive" alt="Imagen responsive"/>
+                  <!--falta menu en las paginas-->
+              </div>
+                    <div class="container cont">
+                       <!-- contenido de la pagina -->
+                    </div>
+                
+                        <div class="container pie">
+                            Calvo, Buzarquis, Murano - Prog. Web 2 - 2015
+                        </div>
+      </body>
+</html>
