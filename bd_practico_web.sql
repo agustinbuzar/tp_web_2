@@ -7,7 +7,7 @@ CREATE TABLE vehiculo(	patente varchar(10) PRIMARY KEY,
                         modelo varchar(30),
                         nro_chasis varchar(30),
                         nro_motor varchar(30),
-                        año_fabricacion int,
+                        ano_fabricacion int,
 						kilometros int );
 
 CREATE TABLE licencia(	cod_lic int primary key,
@@ -25,8 +25,8 @@ CREATE TABLE empleado(	dni int PRIMARY KEY,
 						foreign key (licencia) references licencia(cod_lic),
                         FOREIGN KEY (tipo_empleado) REFERENCES especialidad(cod_especialidad)	);
 
-CREATE TABLE viaje (	cod_viaje int PRIMARY KEY,
-						chofer int,
+CREATE TABLE viaje (	cod_viaje int PRIMARY KEY AUTO_INCREMENT,
+						dni_chofer int,
 						origen varchar(50),
 						destino varchar(50),
                         vehiculo varchar(10),

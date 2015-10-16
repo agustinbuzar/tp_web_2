@@ -13,9 +13,13 @@
                                         WHERE u.nombre='".$nombre."' and u.clave='".$clave."';");
                 $cant_usuarios = mysql_num_rows($consulta);
                 $dato = mysql_fetch_assoc($consulta);
+            if($cant_usuarios == 0){
+                header ('Location: login.html');
+            }
+                $_SESSION[dni] = $dato[dni];
+                $_SESSION[rol] = $dato[descripcion];
 
-
-                if($dato[descripcion]=='administrador'){
+               if($dato[descripcion]=='administrador'){
                     header('Location: admin.php');
                 }
                     if($dato[descripcion]=='chofer'){
@@ -24,9 +28,6 @@
                         if($dato[descripcion]=='supervisor'){
                             header('Location: supervisor.php');
                         }
-                        else{
-                            header('Location: log.html');
-                        }
-                    
+                       
         mysql_close($conexion);
     ?>
